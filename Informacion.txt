@@ -1,0 +1,1 @@
+En este repositorio se encuentran los códigos hechos en el programa LPP para realizar pseudocódigos.
