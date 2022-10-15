@@ -1,0 +1,31 @@
+cadena[40] nombre
+real n1, n2, n3, n4, def
+
+inicio
+escriba "Ingresar nombre: "
+lea nombre
+escriba "Ingresar nota 1 (entre 0 y 5): "
+lea n1
+escriba "Ingresar nota 2 (entre 0 y 5): "
+lea n2
+escriba "Ingresar nota 3 (entre 0 y 5): "
+lea n3
+escriba "Ingresar nota 4 (entre 0 y 5): "
+lea n4
+
+llamar nueva_linea()
+def <- (n1+n2+n3+n4)/4
+escriba "Nota definitiva: ",def
+llamar nueva_linea()
+
+si (def<2) entonces
+	escriba "PERDIO LA MATERIA"
+	sino
+		si (def<3) entonces 
+			escriba "HABILITA LA MATERIA"
+			sino
+				escriba "GANO LA MATERIA"
+		fin si
+fin si
+
+fin
