@@ -1,0 +1,66 @@
+real n1, n2, n3, T1, T2, T3
+
+
+inicio
+
+escriba "Ingresar el numero 1: "
+lea n1
+escriba "Ingresar el numero 2: "
+lea n2
+escriba "Ingresar el numero 3: "
+lea n3
+
+
+si (n1<n2) entonces
+	si (n1<n3) entonces
+		T1 <- n1
+		sino
+			T1 <- n3
+	fin si 
+	sino
+	si (n2<n3) entonces
+		T1 <- n2
+		sino
+			T1 <- n3
+	fin si
+fin si
+
+si (n1<n2) entonces
+	si (n1<n3) entonces
+		si (n2<n3) entonces
+			T2 <- n2
+			sino
+				T2 <- n3
+		fin si
+		sino
+			T2 <- n1
+	fin si 
+	sino
+		si (n1<n3) entonces
+			T2 <- n1
+			sino
+				si (n2<n3) entonces
+					T2 <- n3
+					sino 
+						T2 <- n2
+				fin si
+		fin si
+fin si
+
+si (n1>n2) entonces
+	si (n1>n3) entonces
+		T3 <- n1
+		sino
+			T3 <- n3
+	fin si 
+	sino
+	si (n2>n3) entonces
+		T3 <- n2
+		sino
+			T3 <- n3
+	fin si
+fin si
+
+escriba "El orden ascendente es: ",T1,", ",T2,", ",T3
+
+fin
