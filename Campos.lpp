@@ -1,0 +1,15 @@
+//Definición de variables
+CADENA [30] nombre
+CARACTER genero
+ENTERO edad
+REAL estatura
+
+INICIO
+	Lea nombre
+	Lea genero
+	Lea edad
+	Lea estatura
+	
+	Escriba "Datos ingresados: ", nombre, " ", genero, " ", edad, " ", estatura
+	 
+FIN
