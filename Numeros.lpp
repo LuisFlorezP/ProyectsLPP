@@ -1,0 +1,43 @@
+real n1, n2, n3
+
+inicio
+escriba "Ingresar primer numero: "
+lea n1
+escriba "Ingresar segundo numero: "
+lea n2
+escriba "Ingresar tercer numero: "
+lea n3
+
+llamar nueva_linea()
+
+si (n1>n2) entonces
+	si (n1>n3) entonces
+		escriba "El numero mayor es el primero: ",n1
+		sino
+			escriba "El numero mayor es el tercero: ",n3
+	fin si 
+	sino
+	si (n2>n3) entonces
+		escriba "El numero mayor es el segundo: ",n2
+		sino
+			escriba "El numero mayor es el tercero: ",n3
+	fin si
+fin si
+
+llamar nueva_linea()
+
+si (n1<n2) entonces
+	si (n1<n3) entonces
+		escriba "El numero menor es el primero: ",n1
+		sino
+			escriba "El numero menor es el tercero: ",n3
+	fin si 
+	sino
+	si (n2<n3) entonces
+		escriba "El numero menor es el segundo: ",n2
+		sino
+			escriba "El numero menor es el tercero: ",n3
+	fin si
+fin si
+
+fin
