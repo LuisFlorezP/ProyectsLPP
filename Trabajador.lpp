@@ -1,0 +1,37 @@
+real salario, deduc, bonif, horas
+entero tipoTrab
+cadena[40] nombre
+
+
+inicio
+escriba "Opcion 1: Fijo."
+llamar nueva_linea()
+escriba "Opcion 2: Temporal"
+llamar nueva_linea()
+escriba "Seleccion: "
+lea tipoTrab
+llamar nueva_linea()
+escriba "Ingresar nombre: "
+lea nombre
+escriba "Ingresar numero de horas: "
+lea horas
+
+si (tipoTrab = 1) entonces 
+	salario <- 6000*horas
+	escriba "Salario básico: ",salario
+	llamar nueva_linea()
+	escriba "Ingresar deducciones: "
+	lea deduc
+	escriba "Ingresar bonificaciones: "
+	lea bonif
+	salario <- salario+bonif-deduc	
+	sino
+	salario <- 6000*horas 
+fin si
+
+llamar nueva_linea()
+escriba "Nombre trabajador: ",nombre
+llamar nueva_linea()
+escriba "Salario neto: ",salario
+
+fin
