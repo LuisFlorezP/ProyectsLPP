@@ -1,0 +1,52 @@
+cadena[40] nom
+real sal, hor, net, bt, dt
+real bon1, bon2, bon3, ded1, ded2, ded3
+
+INICIO
+
+bon1<-20000
+bon2<-50000
+bon3<-100000
+ded1<-10000
+ded2<-20000
+ded3<-50000
+
+Escriba "Ingresar nombre del trabajador: "
+Lea nom
+Escriba "Ingresar salario (preferible que sea menor o igual a $15.000): "
+Lea sal
+Escriba "Ingresar horas laboradas: "
+Lea hor
+
+llamar nueva_linea()
+
+si (hor<=48) entonces
+	bt<-bon1
+sino
+	si (hor>48) Y (hor<=58) entonces 
+		bt<-bon2
+	sino
+		bt<-bon3
+	fin si
+fin si
+
+si (sal<=5000) entonces
+	dt<-ded1
+sino
+	si (sal>5000) Y (sal<=8000) entonces 
+		dt<-ded2
+	sino
+		dt<-ded3
+	fin si
+fin si
+
+net<-sal+bt-dt
+
+Escriba "Salario básico: ",sal
+llamar nueva_linea()
+Escriba "Horas laboradas: ",hor
+llamar nueva_linea()
+Escriba "Salario neto: ",net
+llamar nueva_linea()
+
+FIN
