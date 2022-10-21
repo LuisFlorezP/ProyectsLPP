@@ -1,0 +1,62 @@
+caracter genero
+entero edad
+real estatura, peso
+
+INICIO 
+
+Escriba "Ingresar genero (M: masculino - F: femenino): "
+Lea genero
+Escriba "Ingresar edad: "
+Lea edad
+Escriba "Ingresar estatura: "
+Lea estatura
+Escriba "Ingresar peso: "
+Lea peso
+
+llamar nueva_linea()
+
+si (genero='M') entonces
+	si (edad>18) entonces
+		si (estatura>1.7) entonces
+			si (peso<75) entonces
+				Escriba "La persona es APROBADA."
+			sino
+				Escriba "La persona es REPROBADA."
+			fin si
+		sino
+			Escriba "La persona es REPROBADA."
+		fin si
+	sino 
+		Escriba "La persona es REPROBADA."
+	fin si
+	sino 
+		si (genero='F') entonces
+			si (edad>16) entonces
+				si (estatura>=1.7) entonces
+					si (peso<=60) entonces
+						Escriba "La persona es APROBADA."
+					sino
+						Escriba "La persona es REPROBADA."
+					fin si	
+				sino
+					Escriba "La persona es REPROBADA."
+				fin si
+			sino
+				Escriba "La persona es REPROBADA."
+			fin si
+		sino
+			Escriba "La persona es REPROBADA."
+		fin si
+fin si
+
+llamar nueva_linea()
+llamar nueva_linea()
+Escriba " - Generpo: ",genero
+llamar nueva_linea()
+Escriba " - Edad: ",edad
+llamar nueva_linea()
+Escriba " - Estatura: ",estatura
+llamar nueva_linea()
+Escriba " - Peso: ",peso
+
+FIN
